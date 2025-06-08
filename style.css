@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap');
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Space Grotesk', sans-serif; padding: 2rem; overflow-x: hidden; transition: all 0.3s ease; }
+h1, h2 { margin-bottom: 1rem; }
+nav { margin: 2rem 0; }
+nav a { color: var(--text); margin: 0 1rem; text-decoration: none; font-weight: 700; }
+.theme-toggle { position: fixed; top: 1rem; right: 1rem; padding: 0.5rem 1rem; border: none; background: var(--accent); color: #fff; cursor: pointer; border-radius: 8px; }
+body.light { --bg: #f7f7f7; --text: #111; --accent: #ff6b6b; background: var(--bg); color: var(--text); }
+body.night { --bg: #0f0f0f; --text: #f0f0f0; --accent: #87ceeb; background: var(--bg); color: var(--text); }
+body.dreamcore { --bg: linear-gradient(to bottom, #111, #333, #111); --text: #f3e9ff; --accent: #e07bfc; background: var(--bg); color: var(--text); }
+.rain { position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: -1; }
+.drop { position: absolute; bottom: 100%; width: 2px; height: 10px; background: var(--accent); animation: fall linear infinite; }
+@keyframes fall { to { transform: translateY(120vh); } }

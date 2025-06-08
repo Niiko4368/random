@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="night">
+  <div class="rain"></div>
+  <h1>Index</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="journal.html">Journal</a>
+    <a href="moodboard.html">Moodboard</a>
+    <a href="now.html">Now</a>
+  </nav>
+  <script src="rain.js"></script>
+  <script>
+    function toggleTheme() {
+      const body = document.body;
+      if (body.classList.contains('night')) {
+        body.className = 'dreamcore';
+      } else if (body.classList.contains('dreamcore')) {
+        body.className = 'light';
+      } else {
+        body.className = 'night';
+      }
+    }
+  </script>
+</body>
+</html>
